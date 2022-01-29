@@ -41,5 +41,6 @@ export default {
 
   /*默认字体大小*/
   font-size: 2rem;
+  overflow-y: overlay;
 }
 </style>
