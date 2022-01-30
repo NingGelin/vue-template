@@ -104,7 +104,7 @@
   flex-direction: column;
 }
 
-.first-menu{
+.first-menu-open{
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -112,10 +112,15 @@
   align-items: center;
   font-size: 120%;
   margin-left: 30px;
+  flex-shrink: 0;
 }
 
 .menu span {
   margin-left: 10px;
+}
+
+.first-menu-close {
+
 }
 
 .second-menu div {

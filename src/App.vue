@@ -41,6 +41,17 @@ export default {
 
   /*默认字体大小*/
   font-size: 2rem;
-  overflow-y: overlay;
 }
+
+/*滚轮修改 不知道为啥 设置了这个之后滚轮直接不见了难道滚轮默认白色看不见。看不见正好，需要看见就把下面代码放开*/
+::-webkit-scrollbar {
+  width: 3px;
+  height: 1px;
+  border-radius: 5px;
+}
+
+/*::-webkit-scrollbar-thumb {*/
+/*  border-radius: 5px;*/
+/*  background-color: black;*/
+/*}*/
 </style>
