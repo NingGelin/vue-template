@@ -120,10 +120,11 @@ export default {
   name: 'Main',
   data() {
     return {
-      // 当前菜单栏名称
+      // 当前菜单栏名称 head-title里面
       currentMenuName: "首页",
-      // 当前tab name
+      // 当前tab name head-menu里面
       editableTabsValue: "首页",
+      // tab历史 head-menu里面
       editableTabs: [
         {
           // 显示在页面上的名称
@@ -134,6 +135,7 @@ export default {
           link: '/',
         }
       ],
+      // 左侧菜单栏信息 仅支持两级菜单
       menus: [
         {
           name: "首页",
@@ -322,6 +324,7 @@ div >>> #tab-首页 span {
 }
 
 
+/*修改tab栏被选中颜色*/
 div >>> .el-tabs__item.is-top.is-active.is-closable {
   background-color: #f1f7ff;
 }
