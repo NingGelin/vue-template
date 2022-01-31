@@ -64,7 +64,7 @@ export default {
             // 设置缓存
             localStorage.setItem('isLogin', 'true')
             this.$store.dispatch("asyncUpdateUser", {username: this.loginForm.username, name: data.result.name, token: data.result.token})
-            this.$router.push({name: 'Main'});
+            this.$router.push('/');
           })
         } else {
           // this.$message({

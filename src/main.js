@@ -29,6 +29,22 @@ router.beforeEach((to, from, next) => {
   // 注销登录清空缓存
   if (to.path == "/logout") {
     localStorage.clear();
+    let a = store.dispatch("asyncUpdateMenu", {
+      // 当前菜单栏名称
+      currentMenuName: "首页",
+      // 当前tab name
+      editableTabsValue: "首页",
+      editableTabs: [
+        {
+          // 显示在页面上的名称
+          title: '首页',
+          // name必须唯一
+          name: '首页',
+          // 跳转链接
+          link: '/',
+        }
+      ]
+    })
     // 跳转到登录页面
     next({path: "/login"});
   }

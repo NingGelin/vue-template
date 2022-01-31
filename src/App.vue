@@ -18,6 +18,7 @@ export default {
   methods: {
     savaState() {
       localStorage.setItem("state", JSON.stringify(this.$store.state.user))
+      localStorage.setItem("state", JSON.stringify(this.$store.state.menu))
     },
     // 改变根字体大小
     changeFontSize() {

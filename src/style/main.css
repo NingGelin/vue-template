@@ -51,7 +51,7 @@
   height: 60%;
   background-color: white;
   width: 100%;
-  border-bottom: 1px solid #f4f4f5;
+  border-bottom: 1px solid #E4E7ED;
 }
 
 .header-menu {
@@ -59,7 +59,7 @@
   background: white;
 }
 
-.header-title-left, .header-title-right{
+.header-title-left, .header-title-right {
   width: 50%;
   height: 100%;
   display: flex;
@@ -81,6 +81,7 @@
 /*所有的图标大小统一修改*/
 .icon {
   font-size: 3rem;
+  padding-top: 3px;
 }
 
 .header-title-right {
@@ -104,7 +105,7 @@
   flex-direction: column;
 }
 
-.first-menu-open{
+.first-menu-open {
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -119,11 +120,15 @@
   margin-left: 10px;
 }
 
-.first-menu-close {
+.second-menu-open {
 
 }
 
-.second-menu div {
+.second-menu-close {
+  display: none;
+}
+
+.submenu {
   height: 60px;
   display: flex;
   flex-direction: row;
