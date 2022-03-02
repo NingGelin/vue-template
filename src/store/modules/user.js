@@ -1,6 +1,6 @@
 const user = {
   // 全局state对象, 用于保存所有组件的公共数据
-  state: localStorage.getItem('state') ? JSON.parse(localStorage.getItem('state')) : {
+  state: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : {
     user: {
       username: '',
       name: '',

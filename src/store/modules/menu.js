@@ -1,6 +1,6 @@
 const menu = {
   // 全局state对象, 用于保存所有组件的公共数据
-  state: localStorage.getItem('state') ? JSON.parse(localStorage.getItem('state')) : {
+  state: localStorage.getItem('menu') ? JSON.parse(localStorage.getItem('menu')) : {
     menu: {
       // 当前菜单栏名称
       currentMenuName: "首页",
